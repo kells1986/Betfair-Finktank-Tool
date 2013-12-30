@@ -12,4 +12,13 @@ When it is finished it will have the following features:
 Other stuff that would be cool:
 	
 	- Allow you to check current bets
-	- Allow you to check betting history. 
+	- Allow you to check betting history.
+
+##Requires:
+
+* [simplejson](https://pypi.python.org/pypi/simplejson/)
+
+##Bundled With:
+
+* [bfpy](https://code.google.com/p/bfpy/)
+
