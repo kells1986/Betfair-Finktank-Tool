@@ -17,7 +17,7 @@ import urllib2
 import getpass
 
 
-leagues = {'prem':"Barclays Premier League", 'champ':"The Championship", 'l1':"League One", 'l2':"League Two"}
+leagues = {'prem':"Barclays Premier League", 'champ':"Championship", 'l1':"League One", 'l2':"League Two"}
 
 def log_in():
 	user = raw_input('Betfair Username:')
@@ -34,7 +34,7 @@ def log_in():
 	return bf
 
 bf = log_in()
-list = prices_bf.get_betfair_prices(bf, leagues['l2'])
+list = prices_bf.get_betfair_prices(bf, leagues['champ'])
 
 for game in list:
 	print game
