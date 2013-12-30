@@ -8,5 +8,6 @@ setup(name='Betfair-Finktank-Tool',
       author='James Kelly',
       author_email='jkelly2510@gmail.com',
       url='https://github.com/kells1986/Betfair-Finktank-Tool',
-      packages=['bft']
+      packages=['bft'],
+      scripts=['bft/bft.py']
      )
