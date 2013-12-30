@@ -15,7 +15,7 @@ import urllib2
 
 bf = bfpy.BfClient()
 try:
-  bfresp  = bf.login(username='kelbet86', password='cahoots1')
+  bfresp  = bf.login(username='kelbet86', password='nooooo')
   print "logged in"
 except bfpy.BfError, e:
   print "login error: %s" % str(e)
