@@ -4,6 +4,9 @@
 import bfpy
 import bfpy.bfclient as bfclient
 
+import prices_bf
+
+
 import datetime
 import operator
 import sys
@@ -12,6 +15,9 @@ import sys
 import simplejson as json
 import urllib2
 import getpass
+
+
+leagues = {'prem':"Barclays Premier League", 'champ':"The Championship", 'l1':"League One", 'l2':"League Two"}
 
 def log_in():
 	user = raw_input('Betfair Username:')
@@ -23,9 +29,12 @@ def log_in():
 	except bfpy.BfError, e:
 		print "login error"
 	else:
-  		print "Logged In"
+		print "Logged In"
 
 	return bf
 
 bf = log_in()
+list = prices_bf.get_betfair_prices(bf, leagues['l2'])
 
+for game in list:
+	print game
