@@ -11,11 +11,11 @@ import sys
 
 import simplejson as json
 import urllib2
-
+import getpass
 
 
 user = raw_input('Betfair Username:')
-passw = raw_input('Betfair Password:')
+passw = getpass.getpass('Betfair Password:')
 
 
 bf = bfpy.BfClient()
